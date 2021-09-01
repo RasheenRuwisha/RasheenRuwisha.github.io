@@ -8,7 +8,7 @@
 
     <script src="https://use.fontawesome.com/a00b6e71eb.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
     <script src="./js/cloud.js"></script>
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div id="particles-js"></div>
+    <div id="particles-js"></div>
 
 
     <div class="sidenav">
@@ -26,7 +26,7 @@
         <div class="logo">
             <img src="./resources/rlogo.png" alt="">
         </div>
-        
+
         <div class="nav">
             <a class="active" href="index.html"><i class="icon-hom"></i></a>
             <a href="about.html"><i class="icon-prof"></i></a>
@@ -64,27 +64,92 @@
     <section class="main">
 
         <div class="skill-grid">
-        <div class="top-tags">
-            <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;html&gt; </p>
-            <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt; </p>
-        </div>
+            <div class="top-tags">
+                <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;html&gt; </p>
+                <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt; </p>
+            </div>
 
-        <div class="main-text">
-        <p class="tag-text">&lt;h1&gt;</p>
+            <div class="main-text">
+                <p class="tag-text">&lt;h1&gt;</p>
 
-        <p class="header-text">Hi,</p>
-        <p class="header-text">I'm Rasheen,</p>
-        <p class="header-text">full stack developer. <p class="tag-text">&lt;h1&#47;&gt;</p></p>
-        </div>
-       
-        
-        <div class="bottom-tags alternate">
-            <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt; </p>
-            <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/html&gt; </p>
+                <p class="header-text">Hi,</p>
+                <p class="header-text">I'm Rasheen,</p>
+                <p class="header-text">full stack developer. <p class="tag-text">&lt;h1&#47;&gt;</p>
+                </p>
+            </div>
 
+
+            <div class="bottom-tags alternate">
+                <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt; </p>
+                <p class="tag-text"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;/html&gt; </p>
+
+            </div>
         </div>
-    </div>
     </section>
 
     <script src="./js/main.js"></script>
+
+    <script>
+        var scrolling = false;
+        var oldTime = 0;
+        var newTime = 0;
+        var isTouchPad;
+        var eventCount = 0;
+        var eventCountStart;
+
+        var mouseHandle = function (evt) {
+            var isTouchPadDefined = isTouchPad || typeof isTouchPad !== "undefined";
+            console.log(isTouchPadDefined);
+            if (!isTouchPadDefined) {
+                if (eventCount === 0) {
+                    eventCountStart = new Date().getTime();
+                }
+
+                eventCount++;
+
+                if (new Date().getTime() - eventCountStart > 50) {
+                    if (eventCount > 5) {
+                        isTouchPad = true;
+                    } else {
+                        isTouchPad = false;
+                    }
+                    isTouchPadDefined = true;
+                }
+            }
+
+            if (isTouchPadDefined) {
+                // here you can do what you want
+                // i just wanted the direction, for swiping, so i have to prevent
+                // the multiple event calls to trigger multiple unwanted actions (trackpad)
+                if (!evt) evt = event;
+                var direction = (evt.detail < 0 || evt.wheelDelta > 0) ? 1 : -1;
+
+                if (isTouchPad) {
+                    newTime = new Date().getTime();
+
+                    if (!scrolling && newTime - oldTime > 550) {
+                        scrolling = true;
+                        if (direction < 0) {
+                            window.location = './about.html'
+                        } else {
+                            // swipe up
+                        }
+                        setTimeout(function () {
+                            oldTime = new Date().getTime();
+                            scrolling = false
+                        }, 500);
+                    }
+                } else {
+                    if (direction < 0) {
+                        // swipe down
+                    } else {
+                        // swipe up
+                    }
+                }
+            }
+        }
+        document.addEventListener("mousewheel", mouseHandle, false);
+        document.addEventListener("DOMMouseScroll", mouseHandle, false);
+    </script>
+
 </html>
