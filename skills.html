@@ -185,9 +185,9 @@
                     if (!scrolling && newTime - oldTime > 550) {
                         scrolling = true;
                         if (direction < 0) {
-                            window.location = './about.html'
-                        } else {
                             window.location = './contact.html'
+                        } else {
+                            window.location = './about.html'
                         }
                         setTimeout(function () {
                             oldTime = new Date().getTime();
