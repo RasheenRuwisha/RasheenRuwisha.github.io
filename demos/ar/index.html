@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs>
+    <a-marker preset="./pattern-QUAD_M_Sneakers4._CB459188644_.patt">
+        <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
+    <a-marker type="pattern" url="pattern-021a238053a38f0e2ea241b182a36eb0.patt">
+        <a-text value="AR is working :D :D"></a-text>
+    </a-marker>
+
+    <a-marker type="pattern" url="minecraft.patt">
+        <a-text value="YAY YOU FOUND MINECRAFT"></a-text>
+    </a-marker>
+
+    <a-marker id="dota" type="pattern" url="dota.patt">
+        <a-text value="YAY YOU FOUND DOTA"></a-text>
+    </a-marker>
+
+    <a-marker type="pattern" url="dota.patt">
+        <a-text value="YAY YOU FOUND DOTA"></a-text>
+    </a-marker>
+
+    <a-marker type="pattern" url="csgo.patt">
+        <a-text value="YAY YOU FOUND CSGO"></a-text>
+    </a-marker>
+
+    <a-marker type="pattern" url="underlord.patt">
+        <a-text value="YAY YOU FOUND UNDERLORDS"></a-text>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+</a-scene>
+
+<script>
+    var m = document.querySelector("a-marker")
+    m.addEventListener("markerFound", (e)=>{
+        alert("found")
+    })
+
+    m.addEventListener("markerLost", (e)=>{
+        alert("lost")
+    })
+</script>
+</body>
+</html>
