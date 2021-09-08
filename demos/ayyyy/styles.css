@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+body, html{
+    font-family: 'Architects Daughter', cursive;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+
+
+section{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.top{
+    position: absolute;
+    left: -0%;
+    top: -0%;
+}
+
+
+.bottom{
+    position: absolute;
+    right: -0%;
+    bottom: -0%;
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.emoji{
+    height: 100px;
+    width: 100px;
+}
+
+.smiley{
+    height:100px;
+    width: 100px;
+    background-image: url('./angry.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 235%;
+}
+
+.cry{
+    height:100px;
+    width: 100px;
+    background-image: url('./angry.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 235%;
+}
+
+
+.angry{
+    height:100px;
+    width: 100px;
+    background-image: url('./angry.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 235%;
+}
+
+
+.angry{
+    height:100px;
+    width: 100px;
+    background-image: url('./kiss.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 170%;
+}
+
+.thinking{
+    height:100px;
+    width: 100px;
+    background-image: url('./thinkning.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thinking2{
+    height:100px;
+    width: 100px;
+    background-image: url('./thinking2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon{
+    background-image: url('./icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.back{
+    background-image: url('./back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    position: relative;
+}
+
+.ask{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -71px;
+    margin-left: -65px;
+    text-align: center;
+}
+
+.text{
+    font-size: 50px;
+}
+
+@media (max-width:440px) {
+    .back{
+background-size: 181%;
+
+    }
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #111;
+   border-radius: 10px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ button{
+     width: 150px;
+     display: inline;
+ }
+
+
+ .btn1-grad {background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4  51%, #DAE2F8  100%)}
+ .btn1-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #111;
+    border-radius: 10px;
+  }
+
+  .btn1-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
