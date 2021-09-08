@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <TITLE>Movie Information</TITLE>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+
+  </style>
+
+
+  <script>
+
+  var availableTags = [];
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost:8586/movie/all",
+    "method": "GET",
+  }
+
+  $.ajax(settings).done(function (response) {
+    for(i=0;i<response.length;i++){
+      availableTags.push(response[i].title);
+      console.log(availableTags);
+    }
+
+  });
+
+
+
+
+
+
+
+  $( function() {
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide_viewer">
+
+      <div class="slide_group">
+
+        <div class="slide">
+          <div class="slide-show-text-container">
+
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-show-text-container">
+
+          </div>
+        </div>
+        <div class="slide">
+
+        </div>
+        <div class="slide">
+          <div class="slide-show-text-container">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End // .slider -->
+  <div class="directional_nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">MDB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ADD MOVIE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">POSTER URLS</a>
+          </li>
+
+        </ul>
+
+
+
+        <div class="search">
+          <div class="field-input">
+            <input type="text" placeholder="Search..."/><i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="directional_nav1">
+    <div class="info-1 col-md-6">
+      <p class="movie-name">Luxury Problems</p>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p class="genre">Action/Fantasy/Thriller<p>
+        <p class="ten">Release Date</p>
+        <p class="ten release-date">31-12-2015</p>
+      </div>
+      <div class="info-2 col-md-6">
+        <p class="movie-name">Action</p>
+        <div class="arrow">
+          <i class="previous_btn chev fas fa-chevron-up"></i>
+          <i class="next_btn chev fas fa-chevron-down"></i>
+        </div>
+        <p class="ten">Drama<p>
+          <p class="ten">Romance</p>
+
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 ">
+          <p class="title-text-size"><span>Recently Watched</span></p>
+          <div class="thumbnail recently-watched">
+            <a href="/w3images/lights.jpg" target="_blank">
+              <img class="trending-image" src="https://m.media-amazon.com/images/M/MV5BNDFmZjgyMTEtYTk5MC00NmY0LWJhZjktOWY2MzI5YjkzODNlXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SX300.jpg" alt="Lights" >
+              <div class="caption">
+                <div class="textbox">
+                  <p class="alignleft">Wonder Woman &nbsp;&nbsp;&nbsp;(2016)</p>
+                </div>
+                <div class="stars-popular">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p class="p-popular-runtime">2h 32 min</p>
+                <p class="p-popular">Director : John Doe</p>
+                <p class="p-popular">Action/Thriller</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 content popular">
+          <p class="title-text-size"><span>Popular Now</span></p>
+          <div class="grid ">
+            <figure class="effect-ming">
+              <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg" alt="img09"/>
+              <figcaption>
+                <p>Infinity War<p>
+                  <p>Director : Joe Russo</p>
+                  <a href="#">View more</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6">
+            <p class="title-text-size"><span>A - Z</span></p>
+            <div class="owl-controls">
+              <div class="owl-nav">
+                <div class="nav-arrow-right owl-prev"><i class="fa fa-chevron-left"></i></div>
+                <div class="nav-arrow-left owl-next"><i class="fa fa-chevron-right"></i></div>
+              </div>
+
+            </div>
+            <div class="owl-carousel owl-theme">
+              <c:forEach var="list" items="${lists}">
+              <div class="grid item">
+                <figure class="effect-ming gallery-image">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjI3Njg3MzAxNF5BMl5BanBnXkFtZTgwNjI2OTY0NTM@._V1_SX300.jpg" alt="img09"/>
+                  <figcaption>
+                    <p>Deadpool 2<p>
+                      <p class="padding-bottom">Action</p>
+                      <p class="padding-bottom">2h</p>
+
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <p class="more"><a href="#!">More</a> </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </c:forEach>
+
+            </div>
+          </div>
+        </div>
+
+        <script src="js/main.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+
+        <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          items:4,
+          loop:true,
+          margin:25,
+          autoplay:true,
+          autoplayTimeout:10000,
+          autoplayHoverPause:true,
+          nav : true,
+          dots:false,
+          responsiveClass:true,
+          responsive:{
+            0:{
+              items:1,
+              nav:true
+            },
+            600:{
+              items:3,
+              nav:true
+            },
+            1000:{
+              items:3,
+              nav:true,
+              loop:true
+
+            }
+          }
+        });
+
+        // Custom Navigation Events
+        $(".owlnext").click(function(){
+          owl.trigger('owl.next');
+        })
+        $(".owlprev").click(function(){
+          owl.trigger('owl.prev');
+        })
+      </script>
+
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/custom.min.js"></script>
+      <script>
+      $('.slider').each(function() {
+        var $this = $(this);
+        var $group = $this.find('.slide_group');
+        var $slides = $this.find('.slide');
+        var bulletArray = [];
+        var currentIndex = 0;
+        var timeout;
+
+        function move(newIndex) {
+          var animateLeft, slideLeft;
+
+          advance();
+
+          if ($group.is(':animated') || currentIndex === newIndex) {
+            return;
+          }
+
+          bulletArray[currentIndex].removeClass('active');
+          bulletArray[newIndex].addClass('active');
+
+          if (newIndex > currentIndex) {
+            slideLeft = '100%';
+            animateLeft = '-100%';
+          } else {
+            slideLeft = '-100%';
+            animateLeft = '100%';
+          }
+
+          $slides.eq(newIndex).css({
+            display: 'block',
+            left: slideLeft
+          });
+          $group.animate({
+            left: animateLeft
+          }, function() {
+            $slides.eq(currentIndex).css({
+              display: 'none'
+            });
+            $slides.eq(newIndex).css({
+              left: 0
+            });
+            $group.css({
+              left: 0
+            });
+            currentIndex = newIndex;
+          });
+        }
+
+        function advance() {
+          clearTimeout(timeout);
+          timeout = setTimeout(function() {
+            if (currentIndex < ($slides.length - 1)) {
+              move(currentIndex + 1);
+            } else {
+              move(0);
+            }
+          }, 10000);
+        }
+
+        $('.next_btn').on('click', function() {
+          if (currentIndex < ($slides.length - 1)) {
+            move(currentIndex + 1);
+          } else {
+            move(0);
+          }
+        });
+
+        $('.previous_btn').on('click', function() {
+          if (currentIndex !== 0) {
+            move(currentIndex - 1);
+          } else {
+            move(4);
+          }
+        });
+
+        $.each($slides, function(index) {
+          var $button = $('<a class="slide_btn">&bull;</a>');
+
+          if (index === currentIndex) {
+            $button.addClass('active');
+          }
+          $button.on('click', function() {
+            move(index);
+          }).appendTo('.slide_buttons');
+          bulletArray.push($button);
+        });
+
+        advance();
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,559 @@
+
+html, body {
+    background: #1e1e1e;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color:#fff;
+}
+
+.owl-prev {
+    position: absolute;
+    top: -5%;
+    right: -20px;
+    border:0px solid black;
+}
+
+.owl-next {
+    position: absolute;
+    top: -5%;
+    right: -25px;
+    border:0px solid black;
+}
+
+
+
+
+    .search .field-input {
+        text-align: center;
+    }
+    .search .field-input input {
+        text-align: left;
+        border-radius: 6rem;
+        border: 2px solid #a0a0a0;
+        padding: .2rem .2rem .2rem .2rem;
+        width: 15rem;
+        font-family: 'roboto';
+        transition: .5s;
+        background: rgba(0,0,0,0);
+        color: #FFF;
+    }
+    .search .field-input input:focus {
+        outline: none;
+        border-color: #212121;
+        transition: .5s;
+    }
+    .search .field-input span:before {
+        content: '';
+        cursor: pointer;
+        position: relative;
+        font-family: 'fontawesome';
+        top: 0;
+        right: 1.5rem;
+    }
+
+    .fas.fa-search {
+        margin-left: -30px;
+    }
+
+
+        .row{
+            margin-top: 50px;
+            margin-left: 2%;
+            margin-right: 2%;
+
+        }
+
+
+
+
+
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    min-width: 165px;
+    max-width: 165px;
+    max-height: 215px;
+    width: 48%;
+    height: 215px;
+    background: #3085a3;
+    text-align: left;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding-left: 1em;
+    padding-top:2em;
+    padding-bottom:2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure p {
+    word-spacing: -0.15em;
+
+}
+
+
+.grid figure p {
+    margin: 0;
+    padding-bottom:0em;
+}
+.padding-bottom{
+    padding-bottom: 1em !important;
+}
+
+.more{
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    padding-top: 1em;
+    text-align: center;
+    margin: 0 !important;
+    padding-left: 0 !important
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-ming {
+    background: #030c17;
+}
+
+figure.effect-ming img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
+}
+
+
+figure.effect-ming p {
+
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.0);
+}
+
+
+figure.effect-ming i{
+
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.0);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover i{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+
+figure.effect-ming:hover figcaption {
+    background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+    opacity: 0.4;
+}
+
+
+
+.owl-next{
+    margin-right: 30px !important;
+    margin-top:-40px !important;
+    font-size: 30px !important;
+}
+
+.owl-prev{
+    margin-right: 58px !important;
+    margin-top:-40px !important;
+    font-size: 30px !important;
+}
+
+.owl-next:hover{
+    background: none !important;
+    color:black !important;
+}
+
+.owl-prev:hover{
+    background: none !important;
+    color:black !important;
+    user-select:  none !important;
+}
+
+.owl-prev:focus{
+    outline: none !important;
+}
+
+.owl-next:focus{
+    outline: none !important;
+}
+
+.form-control{
+    width: 25% !important;
+}
+.ui-autocomplete {
+    z-index: 9999 !important;
+    color: black !important;
+}
+
+.figcaption i{
+    font-size: 5px;
+}
+
+.slider {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.slide_viewer {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url("https://wallpapersite.com/images/pages/pic_w/12972.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-of-type(2) {
+    background-image: url("https://wallpapersite.com/images/pages/pic_w/649.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-of-type(3) {
+    background-image: url("https://wallpapersite.com/images/pages/pic_w/14402.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-of-type(4) {
+    background-image: url("https://wallpapersite.com/images/pages/pic_w/12811.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slide:nth-of-type(5) {
+    background-image: url("https://wallpapersite.com/images/pages/pic_w/13481.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+}
+
+.info-1 {
+    float: left;;
+    margin-left: 60px;
+
+}
+
+.info-2 {
+    float: right;
+    text-align: right;
+    margin-right: 60px !important;
+}
+
+.directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+}
+
+.directional_nav1 {
+    padding-top: 50px;
+    height: 340px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+}
+.movie-name{
+    font-size:55px;
+    font-weight:bold;
+}
+
+.release-date{
+    font-size:20px;
+    font-weight:bolder;
+}
+
+
+
+
+.slide-show-text-container{
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 450px;
+}
+
+.bg-light {
+    background-color: rgba(0,0,0,0)!important;
+    color: white !important;
+}
+
+.navbar-light .navbar-brand {
+    color: white !important;
+}
+
+
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white !important;
+}
+
+light .navbar-nav .nav-link:hover {
+    color: white !important;
+}
+.row{
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.content-container{
+    padding-right: 40px;
+}
+
+.caption{
+    color: #000;
+    margin-left: 30px;
+    float: left;
+    margin-top: 25px !important;
+}
+
+.trending-image{
+    float: left;
+    height:215px;
+    width: 165px;
+}
+
+
+.recently-watched{
+    background: #FFFFFF;
+    height: 215px;
+}
+.col-md-4{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.col-md-6{
+    max-width: 45% !important;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+.textbox{
+
+}
+.title-text{
+    padding-left: 40px;
+}
+
+.title-text  span{
+    font-weight: bold;
+}
+.title-text-size span{
+    font-weight: bold;
+}
+
+.title-text-size{
+    font-size: 20px;
+}
+
+ul{
+    color:#fff !important;
+}
+.stars{
+    margin-bottom: 20px !important;
+}
+
+.stars-popular{
+    padding-top: 60px !important;
+}
+
+.p-popular{
+    margin-top: -15px!important;
+}
+
+.p-popular-runtime{
+    padding-top: 5px;
+}
+.genre{
+    margin-bottom: 30px !important;
+}
+.alignleft {
+    height: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    float: left;
+}
+.stars{
+    padding-top: 10px;
+}
+
+.popular{
+    margin-left: 40px;
+}
+
+.chev{
+    border-radius: 50px;
+    padding: 5px;
+    background: rgba(0,0,0,0);
+    border: 1px solid white;
+    z-index: 9999;
+}
+
+.ten{
+    margin-bottom: 5px;
+}
+
+.nav-arrow-left{
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 5px !important;
+    margin-right: 25px !important;
+}
+
+.nav-arrow-right{
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 5px !important;
+    margin-right: 52px !important;
+}
+.arrow{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.next_btn{
+  z-index: 99
+}
+@media only screen and (max-width: 600px) {
+    .directional_nav1{
+        display:none;
+    }
+}
