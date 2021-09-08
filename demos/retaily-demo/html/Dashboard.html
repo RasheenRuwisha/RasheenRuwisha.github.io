@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../Resources/themes/main/Main-Theme.css" />
+    <link rel="stylesheet" href="../Resources/themes/innerTheme/HomePage.css" />
+    <link rel="stylesheet" href="../Resources/themes/main/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/caresoul.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div data-role="page" data-theme="d">
+        <div data-role="header" class="header-class">
+            <div style="display: grid;grid-template-columns: 20% 40% 20% 20%;" class="header-grid">
+
+                <a href="#" rel="external" class="btn-home ui-btn-none ui-btn ui-corner-all" data-role="button" data-shadow="false" data-theme="none">
+                    <img src="../images/logos/Transparent.png" border="0">
+                </a>
+                <h3 class="header-title" style="margin-bottom: 0 !important; margin-top: 18px !important;">Dashboard</h3>
+
+                <a href="ar-scanner.html" rel="external" class="btn-camera ui-btn-none ui-btn ui-corner-all" data-role="button" data-shadow="false" data-theme="none">
+                    <img src="../images/icons/icons8-camera-24.png" border="0">
+                </a>
+
+
+                <a href="ProfileNavigation.html" rel="external" class="btn-userprofile ui-btn-none ui-btn ui-corner-all" data-role="button" data-shadow="false" data-theme="none">
+                    <img src="../images/icons/header-userprofile.png" border="0">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="navbar-header" data-role="navbar">
+            <!-- /navbar -->
+            <ul>
+                <li class="second-nav-header"><a class="second-nav-header-radius" href="fashion.html?id=Food" rel="external">Food</a></li>
+                <li class="second-nav-header"><a class="second-nav-header-radius" href="fashion.html?id=Fashion" rel="external">Fashion</a></li>
+                <li class="second-nav-header"><a class="second-nav-header-radius" href="fashion.html?id=Games" rel="external">Games</a></li>
+                <li class="second-nav-header"><a class="second-nav-header-radius" href="fashion.html?id=Manga" rel="external">Manga</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="ui-content">
+            <div class="loader">
+                <img class="loader-gif" src="./../images/giphy.gif">
+                <p> The goodest bois are finding the products..</p>
+            </div>
+
+            <div class="dash-content">
+                <div class="slideshow-container">
+
+                    <div class=" mySlides fade">
+                        <img class="front-page-slides" src="../images/items/1.png">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="front-page-slides" src="../images/items/1.png">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="front-page-slides" src="../images/items/1.png">
+                    </div>
+
+                    <a data-theme="a" class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a data-theme="a" class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+                    <div style="text-align:center;margin-top: -30px;">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="dash-content">
+
+                <h3 class="heading ui-content">Best Sellers</h3>
+                <div class="dashboard-flexbox best-seller">
+
+                </div>
+                <h3 class="heading ui-content">Hot Deals</h3>
+                <div class="dashboard-flexbox hot-deals">
+
+                </div>
+
+                <h3 class="heading ui-content">New</h3>
+                <div class="dashboard-flexbox cattttt ">
+
+
+                    <div>
+
+                    </div>
+                </div>
+                <br>
+                <h3 class="heading ui-content">Leader Board</h3>
+                <br>
+                <div class="leaderboard-participants-dashboard ui-content">
+                    <div class="user-leaderboard">
+                        <p class="price">4th</p>
+                        <p class="price">Rasheen Ruwisha</p>
+                        <p class="user-point  float-price" style="color: #EF963A;">100000</p>
+                    </div>
+
+                    <br>
+                    <div class="user-leaderboard">
+                        <p class="price">4th</p>
+                        <p class="price">Rasheen Ruwisha</p>
+                        <p class="user-point  float-price" style="color: #EF963A;m">100000</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <div class="page-footer footer-class" data-role="footer" style="position:absolute; bottom:0px; left:0px; right:0px; overflow:hidden;">
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <!-- <a href="#" data-role="button" data-icon="homeicon"></a> -->
+                            <a href="#" rel="external" class="btn-nav-bar" data-role="button" data-shadow="false" data-theme="none">
+                                <img src="../images/icons/icons8-home-24.png" border="0" width="35px" height="35px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="search.html" rel="external" class="btn-nav-bar" data-role="button" data-shadow="false" data-theme="none">
+                                <img src="../images/icons/001-search.png" border="0" width="35px" height="35px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Promotions.html" rel="external" class="btn-nav-bar" data-role="button" data-shadow="false" data-theme="none">
+                                <img src="../images/icons/002-fire.png" border="0" width="35px" height="35px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Cart.html" rel="external" class="btn-nav-bar" data-role="button" data-shadow="false" data-theme="none">
+                                <img src="../images/icons/003-shopping-cart.png" border="0" width="35px" height="35px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Catagories.html" rel="external" class="btn-nav-bar" data-role="button" data-shadow="false" data-theme="none">
+                                <img src="../images/icons/003-menu.png" border="0" width="35px" height="35px" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+</body>
+
+
+<script src="../js/Dash.js"></script>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 7000); // Change image every 2 seconds
+    }
+</script>
+
+</html>

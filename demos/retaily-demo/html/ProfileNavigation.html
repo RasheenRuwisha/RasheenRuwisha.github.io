@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../Resources/themes/main/Main-Theme.css" />
+    <link rel="stylesheet" href="../Resources/themes/main/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div role="main" class="login ui-content">
+
+            <img class="User-registration Ipad-logo-size logo-image" src="../images/Logos/Transparent.png" alt="User Icon">
+            <label class="UserNavigation-labels login-labels orange-label" for="username">Username: <span id="Username"></span></label>
+            <label class="UserNavigation-labels login-labels orange-label" for="username">Email: <span id="Email"></span></label>
+
+            <ul class="Profile-Navigation-List" data-role="listview">
+                <li><a href="AboutUs.html" rel="external">About Us</a></li>
+                <li><a href="favourite.html" rel="external">My Favourites</a></li>
+                <li><a href="Catagories.html" rel="external">Categories</a></li>
+                <li><a href="leaderboard.html" rel="external">Leaderboard</a></li>
+                <li><a href="Orderhistory.html" rel="external">Order History</a></li>
+                <li><a href="UserProfile.html" rel="external">Edit Profile</a></li>
+            </ul>
+
+        </div>
+        <p class="UserNavigation logout User-Profile-Edit Register-Account-Text"><a onclick="logout()">Logout</a></p>
+        <p class="UserNavigation User-Profile-Edit Register-Account-Text"><a data-rel="back">Back</a></p>
+
+    </div>
+
+    <!-- /content -->
+</body>
+
+<script>
+    function logout() {
+        localStorage.removeItem("email");
+        window.location = "Login.html"
+    }
+
+    $(document).ready(function() {
+        $("#Username").text(localStorage.Username)
+        $("#Email").text(localStorage.email)
+    });
+</script>
+
+</html>
