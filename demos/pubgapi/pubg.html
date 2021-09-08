@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PUBG api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pubg.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="pubg.js"></script>
+    <script src="matches.js"></script>
+</head>
+<body>
+        <div class="wrap">
+                <div class="search">
+                        <select id="platform-region" data-variable="platform-region"><option value="xbox-as">xbox-as</option><option value="xbox-eu">xbox-eu</option><option value="xbox-na">xbox-na</option><option value="xbox-oc">xbox-oc</option><option value="pc-krjp">pc-krjp</option><option value="pc-jp">pc-jp</option><option value="pc-na">pc-na</option><option value="pc-eu">pc-eu</option><option value="pc-ru">pc-ru</option><option value="pc-oc">pc-oc</option><option value="pc-kakao">pc-kakao</option><option value="pc-sea">pc-sea</option><option value="pc-sa">pc-sa</option><option value="pc-as">pc-as</option></select>
+                   <input type="text" class="searchTerm" id="searchbar" placeholder="What are you looking for?">
+                   <button onclick="search()"  id="button" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+        <section class="details col-md-12 center"> 
+
+        </section>
+        <section class="season-details">
+              
+        </section>
+</body>
+</html>

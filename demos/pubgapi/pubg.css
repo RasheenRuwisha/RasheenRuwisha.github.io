@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  background-image: url("https://d2s2kb1tq1008e.cloudfront.net/assets/pubg/background_simple-17f86280956fadf8f25097a5f57726d235fb6d0df4d98c0a05ad77522850066c.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: #fafafa;
+  font-weight: 400;
+}
+
+.movie_card {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 350px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.movie_card .info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+}
+.movie_card .info_section .movie_header {
+  position: relative;
+  padding: 25px;
+  height: 40%;
+}
+.movie_card .info_section .movie_header h1 {
+  color: #fff;
+  font-weight: 400;
+}
+.movie_card .info_section .movie_header h4 {
+  color: #9ac7fa;
+  font-weight: 400;
+}
+.movie_card .info_section .movie_header .minutes {
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+
+
+}
+
+.border{
+    float: left;
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.movie_card .blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .movie_header {
+    width: 60%;
+  }
+
+  .movie_desc {
+    width: 50%;
+  }
+
+  .info_section {
+    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+  }
+
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie_card {
+    width: 95%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+  }
+
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .movie_desc {
+    width: 100%;
+  }
+
+  .info_section {
+    background: linear-gradient(to top, #141413 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+#bright {
+  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+}
+#bright:hover {
+  box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+}
+
+.bright_back {
+  background: url("https://d2s2kb1tq1008e.cloudfront.net/assets/pubg/title_default-11c0b8cf3e36a6071bf8743f865a4ac53075cebb5d4102b82ab868a4c920b750.png");
+}
+
+
+
+.search {
+    width: 100%;
+    position: relative
+  }
+  
+  .searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #fafafa;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #fafafa;
+  }
+  
+  .searchTerm:focus{
+    color: #000;
+  }
+  
+  .searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #fafafa;
+    background: #fafafa;
+    text-align: center;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  
+
+  .matches{
+    margin-left: 200px
+  }
+
+  table{
+    margin-left: -50px;
+  }

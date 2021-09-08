@@ -1,0 +1,155 @@
+html,body{
+    background-color: #1f1f1f;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.border-top{
+    background: #000;
+    width: 100vw;
+    height: 9vh;
+    border-bottom: 0.5px solid gray;
+}
+
+img{
+    display:block;
+    max-width: 70%;
+    margin: auto;
+}
+
+.main-image{
+    background: url(./ltmsdft4efk51.png) center/cover no-repeat;
+    width: 89.6;
+    height: 82vh;
+    margin: auto;
+}
+
+
+.bottom-border{
+    background: #000;
+    width: 100vw;
+    height: 9vh;
+    border-top: 0.5px solid gray;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.left-border{
+    background: #000;
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 0.5px solid gray;
+}
+
+.right-border{
+    background: #000;
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 0.5px solid gray;
+}
+
+.logo-left{
+    background: #000;
+    height: 9vh;
+    width: 5vw;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 0.5px solid gray;
+}
+
+
+.logo-right{
+    background: #000;
+    height: 9vh;
+    width: 5vw;
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: 0.5px solid gray;
+}
+
+
+.bottom-left{
+    background: #000;
+    height: 9vh;
+    width: 5vw;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 0.5px solid gray;
+}
+
+
+.bottom-right{
+    background: #000;
+    height: 9vh;
+    border-top: 0.5px solid gray;
+    width: 5vw;
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.orange-strip{
+    background: orange;
+    height: 70vh;
+    width: 13vw;
+    position: absolute;
+    left: 10%;
+}
+
+.main-text{
+    font-size: 150px;
+    font-style: bold;
+    position: absolute;
+    left: 11%;
+    color: white;
+    top: 30%;
+}
+
+.secondary-text{
+    font-size: 150px;
+    font-style: bold;
+    position: absolute;
+    left: 20%;
+    color: white;
+    top: 45%;
+}
+
+.button-holder{
+    width: 15vw;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.button{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background: red;
+    position: relative;
+}
