@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Weight Convertor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <style>
+    body{
+        background-color: #333;
+        margin-top:70px;
+        color: white
+    }
+
+       .radio{
+      float:left; 
+      padding-left: 25px;
+    }
+    .radio-container{
+      margin: auto;
+      margin-top: 15px;
+        width: 75%;
+    } 
+    </style>
+
+</head>
+<body class="bg-dark">
+ 
+        <div class="container">
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                    <div class="radio-container">
+                        <div class="radio">
+                            <label><input onclick="changeConversionType()" type="radio" name="optradio" checked value="pounds">Pounds</label>
+                          </div>
+                          <div class="radio">
+                            <label><input onclick="changeConversionType()" type="radio" name="optradio" value="kg">Kilograms</label>
+                          </div>
+                          <div class="radio disabled">
+                            <label><input onclick="changeConversionType()" type="radio" name="optradio" value="grams">Grams</label>
+                          </div>
+                          <div class="radio disabled">
+                            <label><input onclick="changeConversionType()" type="radio" name="optradio" value="ounces">Ounces</label>
+                          </div>
+                          </div>
+                    <form>
+                      <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
+                      </div>
+                    </form>
+                    <div id="output">
+                      <div class="card card-primary mb-2">
+                        <div class="card-block">
+                          <h4 id="grams">Grams:</h4>
+                          <div id="gramsOutput"></div>
+                        </div>
+                      </div>
+              
+                      <div class="card card-success mb-2">
+                        <div class="card-block">
+                          <h4 id="kg">Kilograms:</h4>
+                          <div id="kgOutput"></div>
+                        </div>
+                      </div>
+              
+                      <div class="card card-danger mb-2">
+                        <div class="card-block">
+                          <h4 id="ounces">Ounces:</h4>
+                          <div id="ozOutput"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script src="js/advancedWeightConvertor.min.js"></script>
+</body>
+</html>
