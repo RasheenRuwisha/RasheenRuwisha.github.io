@@ -17,6 +17,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Iconss;
+  src: url('../resources/icomoon2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body,
 html {
@@ -149,6 +155,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+[class^=icons-],
+[class*=" icons-"] {
+  font-family: 'Iconss' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .icon-hom:before {
   content: "\e904";
 }
@@ -168,6 +187,11 @@ body {
 
 .icon-mail:before {
   content: "\e902";
+  font-size: 18px;
+}
+
+.icons-demo:before {
+  content: "\e92e";
   font-size: 18px;
 }
 
@@ -227,6 +251,11 @@ a.active {
 } */
 
 .nav a:nth-child(3) + a:after{
+  font-family: 'Noto Sans', sans-serif;
+  content: 'DEMOS';
+}
+
+.nav a:nth-child(4) + a:after{
   font-family: 'Noto Sans', sans-serif;
   content: 'CONTACT';
 }
