@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+body, html {
+  background-color: #7fd8e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.donut {
+  position: relative;
+  top: -30vh;
+  left: -30vh;
+  text-align: center;
+}
+
+.donut_base {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  border: solid 20vh #ffe6ad;
+  box-shadow: 2.5vh 2.5vh 0 rgba(0, 0, 0, 0.25);
+  -webkit-animation: bounce-in 0.5s forwards;
+          animation: bounce-in 0.5s forwards;
+}
+
+.chocolate {
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 100%;
+  border: solid 10vh #965e25;
+}
+
+.chocolate_curve {
+  position: absolute;
+  height: 20vh;
+  width: 10vh;
+  background-color: #965e25;
+  border-radius: 100%;
+  top: 20vh;
+  left: 2vh;
+  box-shadow: 46vh 0px 0 #965e25;
+}
+.chocolate_curve:before {
+  content: "";
+  z-index: 100;
+  position: absolute;
+  height: 20vh;
+  width: 10vh;
+  background-color: #965e25;
+  border-radius: 100%;
+  top: -23vh;
+  left: 24vh;
+  box-shadow: 46vh 0px 0 #965e25;
+  transform: rotate(90deg);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+  top: 3.8461538462vh;
+  left: 8.6956521739vh;
+}
+
+.sprinkle {
+  position: absolute;
+  border-radius: 10vh;
+  z-index: 100;
+  -webkit-animation: bounce-in-sprinkles 0.5s forwards;
+          animation: bounce-in-sprinkles 0.5s forwards;
+}
+
+.one {
+  transform: rotate(45deg);
+  background-color: #ffa3c0;
+  top: 10vh;
+  left: 12.5vh;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.two {
+  transform: rotate(10deg);
+  background-color: #ffa3c0;
+  top: 30vh;
+  left: 9.5vh;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.three {
+  transform: rotate(60deg);
+  background-color: #ffa3c0;
+  top: 20vh;
+  left: 7.5vh;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.four {
+  transform: rotate(60deg);
+  background-color: #ffa3c0;
+  top: 42.5vh;
+  left: 12.5vh;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.five {
+  transform: rotate(-20deg);
+  background-color: #ffa3c0;
+  top: 47.5vh;
+  left: 22.5vh;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.six {
+  transform: rotate(65deg);
+  background-color: #ffa3c0;
+  top: 47.5vh;
+  left: 32.5vh;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.seven {
+  transform: rotate(-45deg);
+  background-color: #ffa3c0;
+  top: 42.5vh;
+  left: 43.5vh;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.eight {
+  transform: rotate(20deg);
+  background-color: #ffa3c0;
+  top: 32.5vh;
+  left: 50vh;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.nine {
+  transform: rotate(-120deg);
+  background-color: #ffa3c0;
+  top: 22.5vh;
+  left: 49vh;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.ten {
+  transform: rotate(-10deg);
+  background-color: #ffa3c0;
+  top: 12.5vh;
+  left: 45vh;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.eleven {
+  transform: rotate(50deg);
+  background-color: #ffa3c0;
+  top: 7.5vh;
+  left: 35vh;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.twelve {
+  transform: rotate(-20deg);
+  background-color: #ffa3c0;
+  top: 5vh;
+  left: 25vh;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.chocolate_curves_container {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: bounce-in-choco 0.5s 0.5s forwards;
+          animation: bounce-in-choco 0.5s 0.5s forwards;
+}
+
+@-webkit-keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.001);
+  }
+  20% {
+    opacity: 1 !important;
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.001);
+  }
+  20% {
+    opacity: 1 !important;
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce-in-sprinkles {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    height: 7.6666666667vh;
+    width: 2.875vh;
+  }
+  100% {
+    height: 6.6666666667vh;
+    width: 2.5vh;
+  }
+}
+@keyframes bounce-in-sprinkles {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    height: 7.6666666667vh;
+    width: 2.875vh;
+  }
+  100% {
+    height: 6.6666666667vh;
+    width: 2.5vh;
+  }
+}
+@-webkit-keyframes bounce-in-choco {
+  0% {
+    transform: scale(0.001);
+    left: 30vh;
+    top: 30vh;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.15);
+    left: -4.5vh;
+    top: -4.5vh;
+  }
+  100% {
+    left: 0;
+    transform: scale(1);
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes bounce-in-choco {
+  0% {
+    transform: scale(0.001);
+    left: 30vh;
+    top: 30vh;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.15);
+    left: -4.5vh;
+    top: -4.5vh;
+  }
+  100% {
+    left: 0;
+    transform: scale(1);
+    top: 0;
+    opacity: 1;
+  }
+}
+a {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+a:hover {
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="donut">
+        <div class="donut_base"></div>
+        <div class="chocolate_curves_container">
+          <div class="chocolate"></div>
+          <div class="chocolate_curve"></div>
+          <div class="chocolate_curve rotate-45"></div>
+        </div>
+        <div class="sprinkle one"></div>
+        <div class="sprinkle two"></div>
+        <div class="sprinkle three"></div>
+        <div class="sprinkle four"></div>
+        <div class="sprinkle five"></div>
+        <div class="sprinkle six"></div>
+        <div class="sprinkle seven"></div>
+        <div class="sprinkle eight"></div>
+        <div class="sprinkle nine"></div>
+        <div class="sprinkle ten"></div>
+        <div class="sprinkle eleven"></div>
+        <div class="sprinkle twelve"></div>
+      </div>
+      <a href='javascript:history.go(0)'>replay</a>
+
+
+</body>
+</html>
