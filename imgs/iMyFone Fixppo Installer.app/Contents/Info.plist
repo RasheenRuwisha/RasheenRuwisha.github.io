@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleExecutable</key>
+	<string>Installer</string>
+	<key>CFBundleIconFile</key>
+	<string>app.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.imyfone.Installer</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>iMyFone Fixppo Installer</string>
+	<key>CFBundleDisplayName</key>
+	<string>iMyFone Fixppo Installer</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.0.58</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.0.58</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.9</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2021 iMyFone. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>TargetAppBundleID</key>
+	<string>MF.iMyFone Fixppo</string>
+	<key>TargetAppName</key>
+	<string>iMyFone Fixppo</string>
+	<key>TargetAppURL</key>
+	<string>https://download.imyfone.com/fixppo/imyfone-fixppo-for-mac.dmg</string>
+	<key>DOMAINID</key>
+	<string>com_english</string>
+</dict>
+</plist>
