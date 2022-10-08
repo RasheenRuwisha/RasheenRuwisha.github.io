@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+body{
+    background-color: #1f1f1f;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    overflow: scroll !important;
+}
+
+.grid{
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+
+.secondary{
+    font-size: 14px;
+}
+
+.company-name{
+    font-size: 14px;
+    color: #9a9a9e;
+}
+
+.heading{
+    font-size: 16px;
+    font-weight: 100;
+    color: #9a9a9e;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+.position{
+    font-weight: bold;
+}
+
+.work-done{
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-container{
+    margin: 30px 0px;
+}
+
+.education-container{
+    margin: 30px 0px;
+}
+
+.location{
+    font-size: 14px;
+    color: #9a9a9e;
+}
+
+.skills{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

@@ -195,6 +195,11 @@ body {
   font-size: 18px;
 }
 
+.icon-file:before {
+  content: "\e622";
+  font-size: 18px;
+}
+
 .sidenav ul li a {
   padding: 7px 0;
   display: block;
@@ -259,6 +264,12 @@ a.active {
   font-family: 'Noto Sans', sans-serif;
   content: 'CONTACT';
 }
+
+.nav a:nth-child(5) + a:after{
+  font-family: 'Noto Sans', sans-serif;
+  content: 'RESUME';
+}
+
 .nav a i {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
