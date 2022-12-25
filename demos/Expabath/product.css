@@ -15,13 +15,12 @@ body {
 }
 
 .section-one{
-    min-height: 100vh;
+    min-height: 80vh;
 	font-family: monospace;
 	color: white;
 	display: flex;
 	flex-direction: column;
     background-color: #1f1f1f;
-    min-height: 85vh;
 }
 
 
@@ -107,6 +106,10 @@ body {
 }
 
 
+.section-three{
+	margin-top: 5rem;
+}
+
 
 
 
@@ -131,10 +134,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+.img-l{
+	max-width: 40px;
+}
+
+
 .logo {
 	font-weight: bold;
 	font-size: 1.25rem;
-	padding-bottom: 0.5em;
 }
 nav ul {
 	list-style: none;

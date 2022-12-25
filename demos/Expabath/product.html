@@ -8,16 +8,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
     <title>Document</title>
+
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+
+let value = params.product; 
+
+fetch('./products.json')
+    .then((response) => response.json())
+    .then((json) => {
+        document.getElementById("title").innerHTML = json[value].name
+    document.getElementById("type").innerHTML = json[value].type
+    document.getElementById("description").innerHTML = json[value].description
+
+    document.getElementById("li1").innerHTML = json[value].li1
+    document.getElementById("li2").innerHTML = json[value].li2
+    document.getElementById("li3").innerHTML = json[value].li3
+    document.getElementById("li4").innerHTML = json[value].li4
+    document.getElementById("li5").innerHTML = json[value].li5
+    document.getElementById("li6").innerHTML = json[value].li6
+
+
+    }
+   
+
+    );
+
+
+    </script>
 </head>
 <body>
 
     <section class="nav">
         <header>
             <div class="container">
-                <div class="logo">Res Nav</div>
+                <div>
+                    <img class="img-l" src="./expa bath logo final.png" alt="" srcset="">
+                    <div class="logo">Expabath</div>
+                </div>
                 <nav id="menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Products</a></li>
@@ -54,40 +87,40 @@
           <img class='slideshow-thumbnails active' src='https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'>
           <img class='slideshow-thumbnails' src='https://images.unsplash.com/photo-1539341029274-a659646db47c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'>
           <img class='slideshow-thumbnails' src='https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'>
+        
         </div>
             </div>
 
             <div class="text-container">
-                <h1>Test Product</h1>
-                <h2>Test </h2>
+                <h1 id="title"> </h1>
+                <h2 id="type"></h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates incidunt adipisci fuga eveniet sit natus, repellendus commodi animi deserunt eius ex eaque iure ullam, quasi ipsum necessitatibus maiores pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sed rem, perspiciatis cumque amet distinctio debitis ut nemo id molestiae eligendi repellat quas sit totam pariatur rerum veniam iusto obcaecati? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatum ea tenetur natus quas! Mollitia quae possimus nesciunt quos necessitatibus non deserunt saepe sit blanditiis numquam veritatis architecto, itaque temporibus?</p>
+                <p id="description"></p>
             
 
                 <ul>
-                    <li>Product model:WTM-03A11</li>
-                    <li>Material: 304ss</li>
-                    <li>Door type: Sliding</li>
-                    <li>Handle: Optional</li>
-                    <li>Delivery time: 30-45 days</li>
-                    <li>Glass thickness: 8mm/10mm</li>
-                    <li>Certificate: ANSI, ISO 9001:2015</li>
+                    <li id="li1"></li>
+                    <li id="li2"></li>
+                    <li id="li3"></li>
+                    <li id="li4"></li>
+                    <li id="li5"></li>
+                    <li id="li6"></li>
                 </ul>
             </div>
     </section>
 
     <section class="section-two">
         <div class="ts">
-            <h2>Product description</h2>
+            <h2>Related Products</h2>
             <hr>
 
-            <p class="description">
-                Polyhymnia Polishing 8/10mm Frame One Glass Sliding/Bypass 304ss Shower Door is the best option for you bathroom.
-    The waltmal shower door is the combination of elegance and style. Add an element of indulgence to your bathroom with the waltmal.
-    The striking stainless steel hardware and aluminum parts delivers a perfect mix of exceptional quality and cool urban style.
-    Whether your bathroom project is large or small, waltmal can provide the ultimate solution for your renovation!
-            </p>
+           
         </div>
+
+
+      
+    </section>
+
 
       
     </section>
