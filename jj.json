@@ -1,0 +1,72 @@
+
+
+    [{
+        "Date": "2023-04-06",
+        "Delivery Number": "80086410",
+        "Ref Doc": "10081528",
+        "Name of sold-to party": "HILL-ROM INC.",
+        "Material": "OT-URINAL-HK-ASY",
+        "QTY": "4"
+    },
+    {
+        "Date": "2023-04-06",
+        "Delivery Number": "80086410",
+        "Ref Doc": "10081528",
+        "Name of sold-to party": "HILL-ROM INC.",
+        "Material": "OT-VANITY-ASY",
+        "QTY": "15"
+    },
+    {
+        "Date": "2023-04-06",
+        "Delivery Number": "80086410",
+        "Ref Doc": "10081528",
+        "Name of sold-to party": "HILL-ROM INC.",
+        "Material": "OT-BASE-UGC",
+        "QTY": "2"
+    }
+]
+
+
+
+
+[{
+    "Date": "2w023-04-06",
+    "Delivery Number": "80086w410",
+    "Ref Doc": "100w81528",
+    "Name of sold-to party": "HILL-ROM INC.",
+    "Material": "OT-URINAL-HK-ASY",
+    "QTY": "4"
+},
+{
+    "Date": "20w23-04-06",
+    "Delivery Number": "8008w6410",
+    "Ref Doc": "100815w28",
+    "Name of sold-to party": "HILL-ROM INC.",
+    "Material": "OT-VANITY-ASY",
+    "QTY": "15"
+},
+{
+    "Date": "2023-04-06",
+    "Delivery Number": "80086410",
+    "Ref Doc": "10081528",
+    "Name of sold-to party": "HILL-ROM INC.",
+    "Material": "OT-BASE-UGC",
+    "QTY": "2"
+},
+{
+    "Date": "2023-04-06",
+    "Delivery Number": "80086410",
+    "Ref Doc": "10081528",
+    "Name of sold-to party": "HILL-ROM INC.",
+    "Material": "OT-VANITY-ASY",
+    "QTY": "15"
+},
+{
+    "Date": "2023-04-06",
+    "Delivery Number": "80086410",
+    "Ref Doc": "10081528",
+    "Name of sold-to party": "HILL-ROM INC.",
+    "Material": "OT-BASE-UGC",
+    "QTY": "2"
+}
+]
