@@ -10,9 +10,8 @@ body{
   }
   
   .svg-1 {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
-    margin-top: 10vh;
     opacity: 0.9;
     visibility: hidden;
   }
@@ -76,9 +75,9 @@ body{
 
   .container {
     margin: auto;
-    margin-top: 10em;
+    margin-top: 1.5em;
     width: 30rem;
-    height: 30rem;
+    height: 10rem;
     width: 100vw;
   }
   
@@ -92,16 +91,16 @@ body{
   }
   
   .bird .crest1 {
-    width: 10em;
+    width: 3.3em;
   }
   .bird .crest2 {
-    width: 9em;
+    width: 3em;
   }
   .bird .crest3 {
-    width: 8em;
+    width: 2.6em;
   }
   .bird .crest4 {
-    width: 7em;
+    width: 2.3em;
   }
   .bird:hover .crest1 {
     transform: rotate(-50deg);
@@ -125,67 +124,66 @@ body{
   
   .leg {
     position: absolute;
-    width: 6em;
-    height: 3em;
+    width: 2em;
+    height: 1em;
     background: radial-gradient(circle at top, white, #E2EBEE);
-    top: 80%;
-    left: 40%;
+    top: 19%;
+    left: 30%;
     border-radius: 0 0 4rem 4rem;
     transform: rotate(15deg);
   }
   
   .foot {
     position: absolute;
-    width: 5rem;
-    height: 1rem;
+    width: 1.6rem;
+    height: .3rem;
     background: #494344;
     border-radius: 2rem 2rem 0 0;
-    bottom: 7%;
-    left: 40%;
+    top: 22%;
+    left: 31%;
   }
   
   .tail {
     position: absolute;
-    width: 7rem;
-    height: 3rem;
+    width: 2.3rem;
+    height: 1rem;
     background: radial-gradient(circle at top, white, white, #E2EBEE);
     border-radius: 0 0 3rem 3rem;
     transform: rotate(30deg);
-    top: 76%;
-    right: 18%;
+    top: 18%;
+    left: 37%;
   }
   
   .crest1, .crest2, .crest3, .crest4 {
     position: absolute;
-    height: 2em;
+    height: .6em;
     background: linear-gradient(#FFFD5D, #FFFE9F);
     border-radius: 0 0 50% 50%;
     transition: transform 0.3s linear;
     transform-origin: top left;
     transform-style: preserve-3D;
-    top: 24%;
-    left: 31%;
+    top: 1%;
+    left: 25%;
     transform: rotate(25deg);
   }
   
   .body {
     position: absolute;
-    width: 18rem;
-    height: 8.5rem;
+    width: 6rem;
+    height: 2.8rem;
     background: radial-gradient(circle at top left, white, white, #E2EBEE);
     border-radius: 0 0 8rem 8rem;
     transform: rotate(45deg);
-    top: 51%;
-    left: 15.6%;
+    top: 9%;
+    left: 20.8%;
   }
   
   .head {
     position: absolute;
-    width: 7rem;
-    height: 8rem;
+    width: 2.3rem;
+    height: 2.6rem;
     background: white;
     border-radius: 5rem 8rem 0 0;
-    top: 23.3%;
     left: 23%;
     transform: rotate(-10deg);
     background: radial-gradient(circle at left, #E2EBEE, white, white);
@@ -193,8 +191,8 @@ body{
   
   .eye {
     position: absolute;
-    width: 1em;
-    height: 1em;
+    width: .3em;
+    height: .3em;
     background: black;
     border-radius: 50%;
     top: 45%;
@@ -212,8 +210,8 @@ body{
   
   .cheek {
     position: absolute;
-    width: 2em;
-    height: 2em;
+    width: .6em;
+    height: .6em;
     background: #FFFEB0;
     border-radius: 50%;
     top: 55%;
@@ -222,12 +220,12 @@ body{
   
   .beak {
     position: absolute;
-    width: 2.5rem;
-    height: 3.5rem;
+    width: .8rem;
+    height: 1.1rem;
     background: #494344;
     border-radius: 2rem 1rem 1rem 0;
-    top: 34%;
-    left: 17%;
+    top: 4%;
+    left: 21%;
     transform: rotate(-10deg);
   }
   
@@ -242,10 +240,9 @@ body{
   }
 
   .rectangle{
-    margin-top: 10em;
-    height: 10px;
+    margin-top: 7em;
+    height: 4px;
     background-color: #d68651;
     width: 100vw;
     position: absolute;
-    top:12vh
   }
