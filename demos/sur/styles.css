@@ -1,0 +1,251 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/textured_paper_%402X.png);
+    background-blend-mode: multiply;
+    background-color: #e2d8d0;
+    background-repeat: repeat;
+    background-size: 800px;
+  }
+  
+  .svg-1 {
+    height: 70vh;
+    width: 100%;
+    margin-top: 10vh;
+    opacity: 0.9;
+    visibility: hidden;
+  }
+
+  
+  
+  #illustration {
+     animation: squigglevision 0.5s infinite alternate;
+  }
+  
+  @keyframes squigglevision {
+    0% {
+      filter: url('#sketch-0');
+    }
+    25% {
+      filter: url('#sketch-1');
+    }
+    50% {
+      filter: url('#sketch-2');
+    }
+    75% {
+      filter: url('#sketch-3');
+    }
+    100% {
+      filter: url('#sketch-4');
+    }
+  }
+  
+  .path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: paint 1s ease-in-out 1s forwards;
+  }
+  
+  .path:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  
+  @keyframes paint {
+    from {
+      stroke-dashoffset: 1; 
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    min-height: 100vh;
+    display: grid;
+  }
+  
+
+  .container {
+    margin: auto;
+    margin-top: 10em;
+    width: 30rem;
+    height: 30rem;
+    width: 100vw;
+  }
+  
+  .box {
+    position: absolute;
+    z-index: 0;
+    width: 30rem;
+    height: 30rem;
+    left: 50%; 
+    transform: translate(-50%, 0%);
+  }
+  
+  .bird .crest1 {
+    width: 10em;
+  }
+  .bird .crest2 {
+    width: 9em;
+  }
+  .bird .crest3 {
+    width: 8em;
+  }
+  .bird .crest4 {
+    width: 7em;
+  }
+  .bird:hover .crest1 {
+    transform: rotate(-50deg);
+  }
+  .bird:hover .crest2 {
+    transform: rotate(-30deg);
+  }
+  .bird:hover .crest3 {
+    transform: rotate(-10deg);
+  }
+  .bird:hover .crest4 {
+    transform: rotate(10deg);
+  }
+  .bird:hover .eye {
+    height: 0.2rem;
+  }
+
+  .bird:hover .svg-1 {
+    visibility: visible;
+  }
+  
+  .leg {
+    position: absolute;
+    width: 6em;
+    height: 3em;
+    background: radial-gradient(circle at top, white, #E2EBEE);
+    top: 80%;
+    left: 40%;
+    border-radius: 0 0 4rem 4rem;
+    transform: rotate(15deg);
+  }
+  
+  .foot {
+    position: absolute;
+    width: 5rem;
+    height: 1rem;
+    background: #494344;
+    border-radius: 2rem 2rem 0 0;
+    bottom: 7%;
+    left: 40%;
+  }
+  
+  .tail {
+    position: absolute;
+    width: 7rem;
+    height: 3rem;
+    background: radial-gradient(circle at top, white, white, #E2EBEE);
+    border-radius: 0 0 3rem 3rem;
+    transform: rotate(30deg);
+    top: 76%;
+    right: 18%;
+  }
+  
+  .crest1, .crest2, .crest3, .crest4 {
+    position: absolute;
+    height: 2em;
+    background: linear-gradient(#FFFD5D, #FFFE9F);
+    border-radius: 0 0 50% 50%;
+    transition: transform 0.3s linear;
+    transform-origin: top left;
+    transform-style: preserve-3D;
+    top: 24%;
+    left: 31%;
+    transform: rotate(25deg);
+  }
+  
+  .body {
+    position: absolute;
+    width: 18rem;
+    height: 8.5rem;
+    background: radial-gradient(circle at top left, white, white, #E2EBEE);
+    border-radius: 0 0 8rem 8rem;
+    transform: rotate(45deg);
+    top: 51%;
+    left: 15.6%;
+  }
+  
+  .head {
+    position: absolute;
+    width: 7rem;
+    height: 8rem;
+    background: white;
+    border-radius: 5rem 8rem 0 0;
+    top: 23.3%;
+    left: 23%;
+    transform: rotate(-10deg);
+    background: radial-gradient(circle at left, #E2EBEE, white, white);
+  }
+  
+  .eye {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: black;
+    border-radius: 50%;
+    top: 45%;
+    left: 23%;
+    transition: height 0.3s linear;
+  }
+  
+  .eye-shine {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background: white;
+    border-radius: 50%;
+  }
+  
+  .cheek {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: #FFFEB0;
+    border-radius: 50%;
+    top: 55%;
+    right: 25%;
+  }
+  
+  .beak {
+    position: absolute;
+    width: 2.5rem;
+    height: 3.5rem;
+    background: #494344;
+    border-radius: 2rem 1rem 1rem 0;
+    top: 34%;
+    left: 17%;
+    transform: rotate(-10deg);
+  }
+  
+  .wing {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background: white;
+    border-bottom: solid 1px #494344;
+    right: 0;
+    border-radius: 0 0 50% 50%;
+  }
+
+  .rectangle{
+    margin-top: 10em;
+    height: 10px;
+    background-color: #d68651;
+    width: 100vw;
+    position: absolute;
+    top:12vh
+  }
